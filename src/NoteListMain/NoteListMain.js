@@ -4,12 +4,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Note from '../Note/Note';
 import CircleButton from '../CircleButton/CircleButton';
 import './NoteListMain.css';
-import NoteContext from '../NoteContext';
+import NotefulContext from '../NotefulContext';
 import { getNotesForFolder } from '../notes-helpers';
 import PropTypes from 'prop-types';
 
 export default class NoteListMain extends Component {
-  static contextType = NoteContext;
+  static contextType = NotefulContext;
   render() {
     const { folderId } = this.props.match.params;
     return (

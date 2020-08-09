@@ -80,7 +80,7 @@ export default class AddFolder extends Component {
                             type='type'
                             id='folder-name-input'
                             name='folder'
-                            onChange={e => this.nameChange(event.target.value)}/>
+                            onChange={e => this.nameChange(e.target.value)}/>
                             {!this.state.nameValid && (
                                 <div>
                                     <p>{this.state.validationMessage}</p>
